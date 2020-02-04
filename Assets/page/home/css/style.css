@@ -1,0 +1,180 @@
+video
+{
+	height: 100vh;
+	width: 100%;
+	object-fit: cover;
+	z-index:-99;
+	padding-top: 70px;
+}
+.page-home .layout-main
+{
+	padding: 0;
+	margin: 0;	
+	flex-grow: 1;
+}
+
+.page-home .layout-main-first
+{
+	margin: 10px;
+	height: 100vh;
+	width: 100%;
+	font-size: 50px;
+	background-image: url("../img/Hotel.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 0;
+}
+
+.page-home .box-wrapper
+{
+	background-color: #444;
+	color: #fff;
+	padding: 20px;
+	font-size: 150%;
+}
+
+.page-home .layout-main-second
+{
+	display: grid;
+  	grid-gap: 5px;
+	width: 100%;
+}
+
+.page-home .layout-main-most-reserved-1
+{
+	text-align: center;
+	text-shadow: 2px 2px 1px rgb(12, 12, 12);
+  	grid-column: 1;
+  	grid-row: 1;
+  	background-image: url("../img/Hoteles.jpg");
+  	background-size: cover;
+  	background-position: center;
+}
+
+.page-home .layout-main-most-reserved-2
+{
+	text-align: center;
+	text-shadow: 2px 2px 1px rgb(12, 12, 12);
+	grid-column: 2;
+  	grid-row: 1;
+  	background-image: url("../img/lujo.jpg");
+  	background-size: cover;
+  	background-position: center;
+}
+
+.page-home .layout-main-most-reserved-3
+{
+	text-align: center;
+	text-shadow: 2px 2px 1px rgb(12, 12, 12);
+	grid-column: 1;
+  	grid-row: 2;
+  	background-image: url("../img/hotel2.jpg");
+  	background-size: cover;
+  	background-position: center;
+}
+
+.page-home .layout-main-most-reserved-1,.layout-main-most-reserved-2, .layout-main-most-reserved-3:hover
+{
+	cursor: pointer;
+}
+
+.page-home .layout-main-form-home
+{
+	grid-column: 2;
+  	grid-row: 2;	
+}
+
+/*wrapper de coments*/
+
+.page-home .layout-main-coments
+{
+	margin: 10px;
+	display: grid;
+  	grid-gap: 5px;
+	width: 100%;
+}
+
+.page-home .layout-main-coments img
+{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: #fff solid 1px;
+}
+
+.page-home .layout-main-best-coment-1
+{
+	grid-column: 1;
+  	grid-row: 1;
+}
+
+.page-home .layout-main-best-coment-2
+{
+	grid-column: 2;
+  	grid-row: 1;
+}
+
+.page-home .layout-main-best-coment-3
+{
+	grid-column: 3;
+  	grid-row: 1;
+}
+
+
+/*responsive*/
+@media screen and (max-width: 840px)
+{
+	video
+	{
+	height: auto;
+	width: 100%;
+	padding-top: 40px;
+	}
+	.layout-nav a
+	{
+		font-size: 18px;
+	}
+	
+	/*responsive*/
+	.page-home .layout-main-most-reserved-1
+	{
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	.page-home .layout-main-most-reserved-2
+	{
+		grid-column: 1;
+		grid-row: 2;
+	}
+
+	.page-home .layout-main-most-reserved-3
+	{
+		grid-column: 1;
+		grid-row: 3;
+	}
+
+	.page-home .layout-main-form-home
+	{
+		grid-column: 1;
+		grid-row: 4;	
+	}
+	/*responsive coments*/
+	.page-home .layout-main-best-coment-1
+	{
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	.page-home .layout-main-best-coment-2
+	{
+		grid-column: 1;
+		grid-row: 2;
+	}
+
+	.page-home .layout-main-best-coment-3
+	{
+		grid-column: 1;
+		grid-row: 3;
+	}
+}

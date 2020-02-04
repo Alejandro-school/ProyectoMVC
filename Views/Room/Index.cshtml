@@ -1,0 +1,169 @@
+﻿@{
+    Layout = "~/Views/Shared/LayoutFront.cshtml";
+}
+
+<section>
+    <img src="/Content/img/habitacion.jpg" class="link-hotel" onclick="location.href='/Hotel'">
+    <a href="/Hotel">
+        <h2>Habitación Superior</h2>
+    </a>
+
+    <table>
+        <tr>
+            <th>Tipo de alojamiento</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td>Sólo alojamiento</td>
+            <td>80,00 €</td>
+        </tr>
+        <tr>
+            <td>Alojamiento y desayuno</td>
+            <td>102,00 €</td>
+        </tr>
+        <tr>
+            <td>Media pensión</td>
+            <td>122,00 €</td>
+        </tr>
+        <tr>
+            <td>Pensión completa</td>
+            <td>142,00 €</td>
+        </tr>
+    </table>
+
+    <h3>
+        En esta habitación tenemos de una serie de comodidades:
+    </h3>
+
+    <ul>
+        <li>Pantalla plasma con cadenas españolas + opcion de usb</li>
+        <li>Acceso al minibar</li>
+        <li>Cama de matrimonio</li>
+        <li>Vista panoramica</li>
+        <li>Habitacion con insonoridad</li>
+    </ul>
+
+    <h4>
+        De forma opcional y por un precio adicional de 7€ cada una tenemos las siguientes comodidades:
+    </h4>
+
+    <ul>
+        <li>Limpieza habitacion 2 veces al dia</li>
+        <li>Wi-fi privado</li>
+        <li>Ordenador portatil</li>
+        <li>Acceso al atico </li>
+        <li>Personal bellboy para su equipaje</li>
+    </ul>
+
+</section>
+
+<section class="adjust-text">
+
+    <form action="/Booking">
+
+        <label>
+            <span>Fecha de entrada</span>
+            <input data-id="date-start" type="date" />
+        </label>
+
+        <label>
+            <span>Fecha de salida</span>
+            <input data-id="date-finish" type="date" />
+        </label>
+
+        <label>
+            <span>Número de adultos</span>
+            <input data-id="numadults" type="number" min="0" />
+        </label>
+
+        <label>
+            <span> Número de niños </span>
+            <input data-id="numkids" type="number" min="0" />
+        </label>
+
+        <button data-id="submit-room" type="submit">Reservar</button>
+
+    </form>
+
+</section>
+
+<section>
+    <img src="/Content/img/habitacion_superior.jpg" class="link-room" onclick="location.href='/Hotel'">
+    <a href="/Hotel">
+        <h2>Habitación estandard</h2>
+    </a>
+
+    <table>
+        <tr>
+            <th>Tipo de alojamiento</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td>Sólo alojamiento</td>
+            <td>50,00 €</td>
+        </tr>
+        <tr>
+            <td>Alojamiento y desayuno</td>
+            <td>62,00 €</td>
+        </tr>
+        <tr>
+            <td>Media pensión</td>
+            <td>92,00 €</td>
+        </tr>
+        <tr>
+            <td>Pensión completa</td>
+            <td>122,00 €</td>
+        </tr>
+    </table>
+
+    <h3>En esta habitación tenemos de una serie de comodidades:</h3>
+
+    <ul>
+        <li>Pantalla plasma con cadenas españolas + opcion de usb</li>
+        <li>Acceso al minibar</li>
+        <li>Cama de matrimonio</li>
+
+    </ul>
+
+    <h4>De forma opcional y por un precio adicional de 7€ cada una tenemos las siguientes comodidades:</h4>
+
+    <ul>
+        <li>Limpieza habitacion 2 veces al dia</li>
+        <li>Wi-fi privado</li>
+        <li>Ordenador portatil</li>
+        <li>Acceso al atico </li>
+        <li>Personal bellboy para su equipaje</li>
+        <li>Vista panoramica</li>
+        <li>Habitacion con insonoridad</li>
+    </ul>
+
+</section>
+
+<section class="adjust-text">
+
+    <form action="/Booking">
+
+        <label>
+            <span>Fecha de entrada</span>
+            <input data-id="date-start" type="date" required />
+        </label>
+
+        <label>
+            <span>Fecha de salida</span>
+            <input data-id="date-finish" type="date" required />
+        </label>
+
+        <label>
+            <span>Número de adultos</span>
+            <input data-id="numadults" type="number" min="0" required />
+        </label>
+
+        <label>
+            <span> Número de niños </span>
+            <input data-id="numkids" type="number" min="0" required />
+        </label>
+
+        <button data-id="submit-room" type="submit">Reservar</button>
+
+    </form>
+</section>

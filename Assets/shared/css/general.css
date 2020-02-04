@@ -1,0 +1,227 @@
+@charset "UTF-8";
+
+@font-face 
+{
+	/* heu renombrat la font i li heu deixat un nom provisional */
+	font-family: CarsHotels;
+	src:url(../fonts/PlayfairDisplay-Regular.otf);
+}
+
+*
+{
+	font-family:CarsHotels, Arial, Helvetica, sans-serif;
+}
+
+*::selection 
+{
+    background: black;
+    color: white;
+}
+
+a
+{
+	color: white;
+    text-decoration: none;
+    transition: color 0.3s linear 0.2s;
+}
+
+form
+{
+	text-align: center;
+}
+
+label
+{
+	display: block;
+	margin: 1rem;
+	font-size: 0;
+}
+
+label span
+{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1rem;
+}
+
+label span:first-child
+{
+	text-align: left;
+	width: 50%;
+	padding-right: 1rem;
+	box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button
+{
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	border: 0;
+	box-sizing: border-box;
+	background: rgba(0, 0, 0, 0.2);
+	padding: 0.5rem;
+	color: white;
+	font-size: 1rem;
+}
+
+input,
+textarea
+{
+	border: 1px solid black;
+	box-shadow: inset 0px 0px 2px black;
+}
+
+input,
+textarea,
+select
+{
+	text-align: left;
+	vertical-align: middle;
+	width: 50%;
+}
+
+button,
+select,
+input[type="file"] ~ span
+{
+	text-align: center;
+	border-radius: 0.5rem;
+	border: 1px outset black;
+	background: rgba(0, 0, 0, 0.2);
+	padding: 0.5rem;
+}
+
+button:active,
+select:active,
+input[type="file"]:active ~ span
+{
+	border-style: inset;
+}
+
+button:hover,
+select:hover,
+input[type="file"]:hover ~ span
+{
+	cursor: pointer;
+	background: #6d0000;
+	border: 1px solid #6d0000;
+}
+
+fieldset
+{
+	margin: 1rem;
+	border: 1px solid black;
+	text-align: left;
+}
+
+input
+{
+	caret-color: #6d0000;
+}
+
+input[type="checkbox"],
+input[type="radio"]
+{
+	display: none;
+}
+
+input[type="checkbox"] ~ span::before,
+input[type="radio"] ~ span::before
+{
+	border: 1px solid black;
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	margin-right: 0.5rem;
+	background: rgba(0, 0, 0, 0.2);
+	padding: 0.1rem;
+	line-height: 1rem;
+	text-align: center;
+	cursor: pointer;
+	box-shadow: inset 0px 0px 2px black;
+}
+
+input[type="checkbox"] ~ span::before
+{
+	content: "X";
+}
+
+input[type="checkbox"]:not(:checked) ~ span::before
+{
+	color: transparent;
+}
+
+input[type="radio"] ~ span::before
+{
+	content: "+";
+	border-radius: 100%;
+}
+
+input[type="radio"]:not(:checked) ~ span::before
+{
+	color: transparent;
+}
+
+input[type="file"]
+{
+	display: none;
+}
+
+input[type="file"] ~ span
+{
+	width: 100%;
+	box-sizing: border-box;
+}
+
+section caption
+{
+	font-size: 25px;
+}
+
+dl dt a
+{
+	font-size: 1.1em;
+}
+
+tr th
+{
+	text-align: left;
+}
+
+figure img
+{
+	margin: 10px;	
+}
+
+img
+{
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.input-password-ico
+{
+	background-image: url("../img/password.png");
+	background-repeat: no-repeat;
+	padding-left: 35px;
+	background-size: 30px;
+}
+
+.input-mail-ico
+{
+	background-image: url("../img/mail.png");
+	background-repeat: no-repeat;
+	padding-left: 35px;
+	background-size: 30px;
+}
+
+.adjust-text
+{
+	text-align: center;
+	margin-top: 100px;
+}

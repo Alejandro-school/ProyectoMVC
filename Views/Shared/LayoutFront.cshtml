@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="es" class="page-@ViewBag.PageName" data-page="@ViewBag.PageName">
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="/Content/css/style.css" rel="stylesheet" media="screen" />
+    <script src="/Content/js/script.js"></script>
+    <link rel="stylesheet" href="/Content/fontawesome-free-5.12.0-web/css/all.min.css" />
+
+    @Styles.Render("/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <title>@ViewBag.Title</title>
+</head>
+
+<body>
+    <div data-component="cookies-warning" class="overbox3">
+        <div class="infobox3">
+            <p>
+                Esta web utiliza cookies para obtener datos estadísticos de la navegación de sus usuarios. Si continúas
+                navegando consideramos que aceptas su uso.
+                <a href="/CookieUsage">Más información</a>
+                <button data-component="accept" style="cursor:pointer;">Aceptar todas</button>
+                <button data-component="refuse" style="cursor:pointer;">Denegar todas</button>
+            </p>
+        </div>
+    </div>
+
+    <button data-component="scrollTop" title="Go to top">^</button>
+
+    <header class="layout-header">
+        <a class="layout-header-title" href="/Home">Cars &amp Hotels</a>
+
+
+        <nav class="layout-nav">
+            <ul>
+
+                <li><a href="/Coches">Coches</a></li>
+                <li><a href="/Promociones">Promociones</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="layout-main">
+        @RenderBody()
+    </main>
+
+    <footer>
+        <div class="layout-footer">
+
+            <div class="box-wrapper-footer footer-first">
+                <ul>
+                    <li><a href="/About">Sobre nosotros</a></li>
+                    <li><a href="/CookieUsage">Política de cookies</a></li>
+                    <li><a href="/Contact">Contacto</a></li>
+                    <li><a href="/PersonalDataUsage">Uso de datos</a></li>
+                </ul>
+            </div>
+
+            <div class="box-wrapper-footer footer-second">
+                <form action="/ThanksForSubscribing" class="layout-form-footer">
+
+                    <h3>Formulario de registro</h3>
+
+                    <label>
+                        <input type="email" data-id="mail-footer" required placeholder="Introduce aqui tu correo" />
+                    </label>
+
+                    <button data-id="submit-footer" type="submit">Subscribirse</button>
+
+                </form>
+            </div>
+
+            <div class="box-wrapper-footer footer-third">
+
+                <h3>Siguenos en nuestras redes sociales</h3>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-youtube"></i>
+
+            </div>
+            <p>&copy; @DateTime.Now.Year - Adam Fuentes & Alejandro Rodríguez</p>
+        </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+
+</html>

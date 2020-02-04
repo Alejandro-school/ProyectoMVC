@@ -1,0 +1,87 @@
+﻿@{
+    Layout = "~/Views/Shared/LayoutFront.cshtml";
+}
+<section>
+    <h1>Resumen de la reserva:</h1>
+
+    <h2>Hotel</h2>
+
+    <img src="img/Hotel.png">
+
+    <h3>Servicios:</h3>
+
+    <ul>
+        <li>Ruta de 3h con coche Aston Martin Vulcan </li>
+        <li>Acceso al garage de autos</li>
+        <li>Acceso al atico vip</li>
+        <li>Curso de conduccion deportiva (8h)</li>
+    </ul>
+
+    <h2>Habitacion:</h2>
+
+    <img src="img/Habitaciones.png">
+
+    <h3>Servicios:</h3>
+
+    <ul>
+        <li>Pension completa</li>
+        <li>Masage en Habitación</li>
+        <li>SPA incluido</li>
+        <li>Insonoridad</li>
+        <li>Internet exclusivo</li>
+    </ul>
+    <button type="submit" onclick="history.back()">Atras</button>
+</section>
+
+<section class="adjust-text">
+
+    <form action="booking-in-process.html">
+
+        <label>
+            <span>Fecha de entrada</span>
+            <input data-id="dateIn" type="date" />
+        </label>
+
+        <label>
+            <span>Fecha de salida</span>
+            <input data-id="dateOut" type="date" />
+        </label>
+
+        <label>
+            <span>Número de adultos</span>
+            <input data-id="numberAdults" type="number" min="0" />
+        </label>
+
+        <label>
+            <span>Número de niños</span>
+            <input data-id="numberKids" type="number" min="0" />
+        </label>
+
+        <label>
+            <span>Nombre del Solicitante</span>
+            <input data-id="namePerson" type="text" />
+        </label>
+
+        <label>
+            <span>Apellido del Solicitante</span>
+            <input data-id="surnamePerson" type="text" />
+        </label>
+
+        <label>
+            <span>DNI</span>
+            <input data-id="dni" type="dni" />
+        </label>
+
+        <label>
+            <span>Correo</span>
+            <input data-id="email-booking" type="email" />
+        </label>
+
+        <label>
+            <span>Comentarios Adicionales</span>
+            <textarea data-id="comments"></textarea>
+        </label>
+        <button data-id="submit-booking" type="submit">Reservar</button>
+    </form>
+</section>
+

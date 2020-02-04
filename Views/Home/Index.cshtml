@@ -1,0 +1,114 @@
+﻿@{
+    Layout = "~/Views/Shared/LayoutFront.cshtml";
+}
+
+    <div>
+        <p class="layout-main-presentation">
+            La Cadena Hotelera Cars & Hotels se dedica a ofrecer experiencias únicas para
+            los fánaticos
+            de las 4 ruedas, ponen a la disposición de los clientes alojamientos cerca de pueblicitos con
+            encanto y con carreteras en las que poder disfrutar del paisaje mientras se puede conducir
+            con el coche propio o alguno de los coches que se pueden alquilar en las mismas
+            instalaciones.
+        </p>
+        <video src="/Content/video/Video_Audi.mp4" autoplay muted loop></video>
+    </div>
+
+    <div class="layout-main-second">
+        <div class="box-wrapper layout-main-most-reserved-1" onclick="location.href='/Hotel'">
+            <a href="/Hotel">
+                Oferta Hotel 1
+            </a>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
+            </p>
+        </div>
+
+        <div class="box-wrapper layout-main-most-reserved-2" onclick="location.href='/Hotel'">
+            <a href="/Hotel">
+                Oferta Hotel 2
+            </a>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
+            </p>
+        </div>
+
+        <div class="box-wrapper layout-main-most-reserved-3" onclick="location.href='/Hotel'">
+            <a href="/Hotel">
+                Oferta Hotel 3
+            </a>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
+            </p>
+        </div>
+
+        <form class="box-wrapper layout-main-form-home" action="/Search">
+            <label>
+                <span>Fecha de entrada</span>
+                <input data-id="start-date" type="date" required />
+            </label>
+
+            <label>
+                <span>Fecha de salida</span>
+                <input data-id="finish-date" type="date" required />
+            </label>
+
+            <label>
+                <span>Número de adultos</span>
+                <input data-id="adults" type="number" min="0" required />
+            </label>
+
+            <label>
+                <span>Número de niños</span>
+                <input data-id="kids" type="number" min="0" required />
+            </label>
+
+            <label>
+                <span>Ciudad</span>
+                <select required>
+                    <option value="barcelona">Barcelona</option>
+                    <option value="madrid">Madrid</option>
+                    <option value="valencia">Valencia</option>
+                    <option value="bilbao">Bilbao</option>
+                </select>
+            </label>
+
+            <button data-id="submit-index" type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <div class="layout-main-coments">
+        <div class="box-wrapper layout-main-best-coment-1">
+
+            <img src="/Content/img/michael_schumacher_2.jpg">
+            <a href="#">Michael Schumacher</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+
+        </div>
+
+        <div class="box-wrapper layout-main-best-coment-2">
+
+            <img src="/Content/img/lewis_hamilton_2.jpg">
+            <a href="#">Lewis Hamilton</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+
+        </div>
+
+        <div class="box-wrapper layout-main-best-coment-3">
+
+            <img src="/Content/img/fernando_alonso_2.jpg" />
+            <a href="#">Fernando Alonso</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+
+        </div>
+
+    </div>
